@@ -1,1 +1,1 @@
-# fulanoresolve.giithub.io
+# fulanoresolve.github.io
