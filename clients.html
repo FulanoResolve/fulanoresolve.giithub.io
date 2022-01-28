@@ -32,7 +32,7 @@
 
 <!----------------------------- FORMS ----------------------------->
 
-    <form action="/add-client" method="post" class="form">
+    <form action="/users" method="post" class="form">
         <label>
             Nome Completo
             <br>
@@ -64,8 +64,23 @@
         </label>
         
         <button type="submit" class="cta-btnp">Enviar</button>
-
     </form>
+
+    <script>
+
+        async function getContent() {
+            try {
+                const element = await fetch("https://fulanoapi.herokuapp.com/api");
+                console.log(element);
+            }
+            catch (error) {
+                console.log(error);
+            }
+        }
+
+        getContent()
+
+    </script>
 
 <!----------------------------- FOOTER ----------------------------->
 
